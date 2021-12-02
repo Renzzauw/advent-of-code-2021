@@ -1,11 +1,7 @@
 import numpy as np
 
 # Load data
-data = np.loadtxt('day01/day01_input.txt', dtype=int)
-
-# Perform a sliding window summation per 3 elements
-# TODO: uncomment for answer of part B
-# data = np.convolve(data, np.ones(3, dtype=int), 'valid')
+data = np.loadtxt('01-sonar-sweep/input.txt', dtype=int)
 
 # Calculate the differences
 diffs = np.diff(data)
